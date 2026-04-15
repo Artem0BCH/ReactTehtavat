@@ -1,5 +1,8 @@
 import Infolista from "./infolista.jsx";
 import Linkkilista from "./Linkkilista.jsx";
+import Tervehdys from "./Tervehdys.jsx";
+import Kayttajakortti from "./Kayttajakortti.jsx";
+
 function App() {
   const tiedot = ["React", "Javascript", "CSS"];
   const linkit = [
@@ -10,6 +13,7 @@ function App() {
     <>
       <Infolista taulukko={tiedot} />
       <Linkkilista taulukko={linkit} />
+      <Kayttajakortti nimi="Ville" lista={["React", "JavaScript", "CSS"]} />
     </>
   );
 }
