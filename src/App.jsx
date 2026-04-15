@@ -1,11 +1,17 @@
 import Infolista from "./infolista.jsx";
-function App(){
-  const tiedot = ["React","Javascript","CSS"];
-  return(
+import Linkkilista from "./Linkkilista.jsx";
+function App() {
+  const tiedot = ["React", "Javascript", "CSS"];
+  const linkit = [
+    { id: 1, nimi: "Google", url: "https://google.com" },
+    { id: 2, nimi: "React", url: "https://react.dev" },
+  ];
+  return (
     <>
-    <Infolista taulukko={tiedot}/>
+      <Infolista taulukko={tiedot} />
+      <Linkkilista taulukko={linkit} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
