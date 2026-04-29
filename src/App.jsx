@@ -1,7 +1,11 @@
+import * as React from "react";
+import { useState } from "react";
+
 import Infolista from "./infolista.jsx";
 import Linkkilista from "./Linkkilista.jsx";
 import Tervehdys from "./Tervehdys.jsx";
 import Kayttajakortti from "./Kayttajakortti.jsx";
+import Laskuri from "./Counter.jsx";
 
 function App() {
   const tiedot = ["React", "Javascript", "CSS"];
@@ -14,6 +18,7 @@ function App() {
       <Infolista taulukko={tiedot} />
       <Linkkilista taulukko={linkit} />
       <Kayttajakortti nimi="Ville" lista={["React", "JavaScript", "CSS"]} />
+      <Laskuri />
     </>
   );
 }
