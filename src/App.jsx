@@ -6,6 +6,7 @@ import Linkkilista from "./Linkkilista.jsx";
 import Tervehdys from "./Tervehdys.jsx";
 import Kayttajakortti from "./Kayttajakortti.jsx";
 import Laskuri from "./Counter.jsx";
+import LaskuriKorjattu from "./FixedCounter.jsx";
 
 function App() {
   const tiedot = ["React", "Javascript", "CSS"];
@@ -19,6 +20,7 @@ function App() {
       <Linkkilista taulukko={linkit} />
       <Kayttajakortti nimi="Ville" lista={["React", "JavaScript", "CSS"]} />
       <Laskuri />
+      <LaskuriKorjattu />
     </>
   );
 }
