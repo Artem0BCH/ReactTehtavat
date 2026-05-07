@@ -7,6 +7,7 @@ import Tervehdys from "./Tervehdys.jsx";
 import Kayttajakortti from "./Kayttajakortti.jsx";
 import Laskuri from "./Counter.jsx";
 import LaskuriKorjattu from "./FixedCounter.jsx";
+import NameList from "./FixedNamelist.jsx";
 
 function App() {
   const tiedot = ["React", "Javascript", "CSS"];
@@ -21,6 +22,7 @@ function App() {
       <Kayttajakortti nimi="Ville" lista={["React", "JavaScript", "CSS"]} />
       <Laskuri />
       <LaskuriKorjattu />
+      <NameList />
     </>
   );
 }
